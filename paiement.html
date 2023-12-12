@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style1.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <title>Paiement</title>
+</head>
+<body>
+  <h2>Paiement</h2>
+  <form action="traitement_paiement.php" method="post">
+    <label for="mode_paiement">Choisissez le mode de paiement :</label>
+    <select id="mode_paiement" name="mode_paiement" required>
+      <option value="carte_credit">Carte de crédit</option>
+      <option value="paypal">PayPal</option>
+      <option value="espece">Espèces</option>
+
+    </select>
+
+    <fieldset>
+      <legend>Méthode de paiement :</legend>
+      <label><input type="radio" name="methode_paiement" value="en_ligne" required> En ligne</label>
+      <label><input type="radio" name="methode_paiement" value="a_la_livraison"> À la livraison</label>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Valider le paiement">
+  </form>
+</body>
+</html>

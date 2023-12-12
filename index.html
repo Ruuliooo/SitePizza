@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Meta tags for character set and responsive design -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link to external stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- Title of the page -->
+    <title>Pizza'road</title>
+</head>
+
+<body>
+    <!-- Logo image -->
+    <img src="titre.png">
+
+    <!-- Main heading -->
+    <h1>Commande ta pizza en quelques clics !</h1>
+
+    <!-- Form for customer information -->
+   <form action="paiement.html" method="post">
+
+        <!-- Section for customer details -->
+        <h2>Informations du Client</h2>
+        </br>
+        <!-- Input fields for customer name, phone, and address -->
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <label for="tel">Téléphone :</label>
+        <input type="tel" id="tel" name="tel" required>
+
+        <label for="adress">Adresse :</label>
+        <input type="mail" id="adress" name="adress" required>
+
+        <!-- Section for pizza selection -->
+        <h2>Choix de la Pizza</h2>
+
+        <!-- Dropdown menu for pizza selection -->
+        <label for="pizza">Sélectionnez votre pizza :</label>
+        <select id="pizza" name="pizza" required>
+            <option value="margherita">Margherita 8€</option>
+            <option value="pepperoni">Pepperoni 9€</option>
+            <option value="vegetarienne">Végétarienne 8€</option>
+            <option value="vegan">Vegan 7€</option>
+            <option value="algerienne">Algérienne 10€</option>
+            <option value="carnivore">Carnivore 11€</option>
+            <option value="baltique">Baltique 11€</option>
+        </select>
+
+        <!-- Section for pizza size -->
+        <h2>Taille de la Pizza</h2>
+
+        <!-- Radio buttons for pizza size -->
+        <label><input type="radio" name="taille" value="petite" required> M (26cm)</label>
+        <label><input type="radio" name="taille" value="moyenne" checked> L (33cm)</label>
+        <label><input type="radio" name="taille" value="grande"> XL (40cm)</label>
+
+        <!-- Section for additional options -->
+        <h2>Options Supplémentaires</h2>
+
+        <!-- Checkboxes for additional pizza options -->
+        <label><input type="checkbox" name="option_fromage"> Fromage supplémentaire (+1€)</label>
+        <label><input type="checkbox" name="option_olives"> Olives (+0.50€)</label>
+        <label><input type="checkbox" name="option_champignons"> Champignons (+0.75€)</label>
+        <label><input type="checkbox" name="option_anchois"> Anchois (+1€)</label>
+        <label><input type="checkbox" name="option_pepperoni"> Pepperoni (+1€)</label>
+        <label><input type="checkbox" name="option_oeufs"> Oeuf (+0.50€)</label>
+        <label><input type="checkbox" name="option_ananas"> Ananas (+0.75€)</label>
+
+        <!-- Line break for better spacing -->
+        <br>
+
+        <!-- Submit button to proceed to payment -->
+        <input type="submit" value="Procéder au paiement">
+    </form>
+
+</body>
+
+</html>
